@@ -10,20 +10,17 @@ while True:
     else:
         break
 
-int_numbers = [int(i) for i in numbers]    
-
-int_numbers.sort()
-
-length = len(int_numbers)
+numbers.sort()
+length = len(numbers)
 
 test = length%2
 
 if test == 1:
-    print(str((int_numbers[int((length - 1)/2)])))
+    print(str((numbers[int((length - 1)/2)])))
 
 else:
-    median1 = int_numbers[int((length - 1)/2)]
-    median2 = int_numbers[int(((length - 1)/2) + 1)]
+    median1 = numbers[int((length - 1)/2)]
+    median2 = numbers[int(((length - 1)/2) + 1)]
     print(str((median1 + median2)/2))
 
 
